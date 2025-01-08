@@ -1,0 +1,134 @@
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: round;
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 600;
+  width: 100%;
+  height: 90vh;
+}
+
+#left {
+  display: grid;
+  grid-template-rows: 10% 80%;
+  padding: 20px;
+}
+
+#fLeft {
+  width: 50%;
+}
+
+#sLeft {
+  width: 100%;
+  height: 100vh;
+}
+
+#sLeft img {
+  width: 100%;
+  height: 70%;
+}
+
+#right {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 60% 30%;
+  align-items: center;
+}
+
+#right h2{
+    font-family: "Open Sans";
+    font-weight: 800;
+}
+
+button {
+  color: hsl(257, 40%, 49%);
+  border-radius: 10em;
+  width: 10em;
+  height: 3em;
+  border-style: none;
+  border-width: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+  box-shadow: 2px 2px 2px white;
+}
+
+#links {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+#links i {
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#links i:hover {
+  color: black;
+  border: 1px solid white;
+}
+
+@media (max-width: 575px)  {
+  #main {
+    display: block;
+  }
+
+  #main {
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: round;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    font-family: "Roboto Mono";
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+  }
+
+  #right {
+    text-align: center;
+    grid-template-rows: auto auto;
+  }
+
+  #links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #Left{
+    grid-template-rows: 30% 80%;
+  }
+
+  #sLeft{
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: -100px;
+  }
+
+}
